@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-3">
+    <h1>Vlog Title: {{ vlog_record.title }}</h1>
+    <p>Description: {{ vlog_record.description }}</p>
+    <img src="{{ vlog_record.vlog_image.url }}" alt="Vlog Image">
+</div>
+
+
+{% endblock content %}
